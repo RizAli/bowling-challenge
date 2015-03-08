@@ -20,6 +20,11 @@ describe ('Frame', function (){
     expect(frame.firstRollScore).toEqual(4);
   });
 
+  it('takes second roll for a frame', function(){
+    frame.receiveSecondRoll(4);
+    expect(frame.secondRollScore).toEqual(4)
+  });
+
 
 
 
