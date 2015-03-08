@@ -10,6 +10,18 @@ describe ('Frame', function (){
     expect(frame.totalScore).toEqual(0);
   });
 
+  it('takes first roll for a frame', function(){
+    frame.receiveFirstRoll(5);
+    expect(frame.totalScore).toEqual(5);
+  });
+
+  it("updates firstRollScore based on the pins dropped", function(){
+    frame.receiveFirstRoll(4);
+    expect(frame.firstRollScore).toEqual(4);
+  });
+
+
+
 
 
 });
