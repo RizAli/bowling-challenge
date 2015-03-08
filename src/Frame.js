@@ -5,11 +5,15 @@ var Frame = function (){
 };
 
 Frame.prototype.receiveFirstRoll = function(pinsQty){
-  this.totalScore = pinsQty
   this.firstRollScore += pinsQty
 };
 
 Frame.prototype.receiveSecondRoll = function(pinsQty) {
-    this.totalScore = pinsQty
     this.secondRollScore += pinsQty
+    // alert(this.secondRollScore);
+};
+
+Frame.prototype.score = function(firstRollScore,secondRollScore){
+  this.totalScore = firstRollScore + secondRollScore;
+
 };
