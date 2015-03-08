@@ -10,10 +10,16 @@ Frame.prototype.receiveFirstRoll = function(pinsQty){
 
 Frame.prototype.receiveSecondRoll = function(pinsQty) {
     this.secondRollScore += pinsQty
-    // alert(this.secondRollScore);
-};
+    };
 
 Frame.prototype.score = function(firstRollScore,secondRollScore){
   this.totalScore = firstRollScore + secondRollScore;
+};
 
+Frame.prototype.strike= function(){
+  this.firstRollScore = 10;
+};
+
+Frame.prototype.spare = function(){
+  this.totalScore = this.firstRollScore + this.secondRollScore;
 };
