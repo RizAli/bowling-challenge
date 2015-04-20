@@ -1,12 +1,5 @@
-
-Bowling Challenge
-=================
-
-    Test time: Friday, the entire day and the weekend if you need it.
-    Feel free to use Google, your notes, and your books.
-
-Task: 
------
+Project: 
+-------
 
 Count and sum the scores of a bowling game for one player (in JavaScript).
 
